@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kahvenizi Seçin ve Keyfini Çıkarın</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Kahvenizi Seçin</h1>
+      <form>
+        <div class="coffee-types">
+          <div class="coffee-type">
+            <img src="images/americano.jpg" alt="Americano" height="350px" />
+            <h2>Americano</h2>
+            <p>Espresso ve sıcak suyla yapılan bir kahve türüdür.</p>
+            <input
+              type="radio"
+              name="coffee-type"
+              value="americano"
+              id="americano"
+            />
+            <label for="americano">Americano</label>
+          </div>
+          <div class="coffee-type">
+            <img src="images/espresso.jpg" alt="Espresso" height="350px" />
+            <h2>Espresso</h2>
+            <p>Kahvenin en yoğun şeklidir.</p>
+            <input
+              type="radio"
+              name="coffee-type"
+              value="espresso"
+              id="espresso"
+            />
+            <label for="espresso">Espresso</label>
+          </div>
+          <div class="coffee-type">
+            <img src="images/latte.jpg" alt="Latte" height="350px" />
+            <h2>Latte</h2>
+            <p>Espresso ve sütten yapılan bir kahve türüdür.</p>
+            <input type="radio" name="coffee-type" value="latte" id="latte" />
+            <label for="latte">Latte</label>
+          </div>
+        </div>
+        <button formaction="select-bean.html" type="submit">Seç</button>
+      </form>
+    </div>
+  </body>
+</html>

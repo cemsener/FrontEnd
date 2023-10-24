@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kavrulma Derecesini Seçin</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Kahve Çekirdeğinizin Kavrulma Derecesini Seçin</h1>
+      <form>
+        <div class="coffee-types">
+          <div class="coffee-type">
+            <img src="images/koyu.png" alt="Koyu" height="350px" />
+            <h2>Koyu</h2>
+            <p>
+              Koyu kavrulmuş kahve, kahve çekirdeklerinin en uzun<br />
+              süre kavrulmasıdır. Bu, çekirdeklerin içindeki nemin<br />
+              ve asidin büyük ölçüde buharlaşmasına neden olur. <br />
+              Koyu kavrulmuş kahve, daha az asitli, daha yoğun ve<br />
+              daha acı bir tada sahiptir.
+            </p>
+            <input type="radio" name="roast-type" value="koyu" id="koyu" />
+            <label for="koyu">Koyu</label>
+          </div>
+          <div class="coffee-type">
+            <img src="images/orta.png" alt="orta" height="350px" />
+            <h2>Orta</h2>
+            <p>
+              Orta kavrulmuş kahve, kahve çekirdeklerinin orta süre<br />
+              kavrulmasıdır. Bu, çekirdeklerin içindeki nemin ve asidin<br />
+              bir kısmının buharlaşmasına neden olur. Orta kavrulmuş kahve,<br />
+              dengeli bir tada sahiptir ve meyvemsi, çikolatalı veya<br />
+              karamelli notalar içerebilir.
+            </p>
+            <input type="radio" name="roast-type" value="orta" id="orta" />
+            <label for="orta">Orta</label>
+          </div>
+          <div class="coffee-type">
+            <img src="images/hafif.png" alt="Hafif" height="350px" />
+            <h2>Hafif</h2>
+            <p>
+              Hafif kavrulmuş kahve, kahve çekirdeklerinin en kısa süre<br />
+              kavrulmasıdır. Bu, çekirdeklerin içindeki nemin ve asidin<br />
+              çoğunun korunmasına neden olur. Hafif kavrulmuş kahve, <br />
+              yüksek asitli ve aromatik bir tada sahiptir.
+            </p>
+            <input type="radio" name="roast-type" value="hafif" id="hafif" />
+            <label for="hafif">Hafif</label>
+          </div>
+        </div>
+        <button formaction="select-size.html" type="submit">Seç</button>
+      </form>
+    </div>
+  </body>
+</html>

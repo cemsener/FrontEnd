@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablolar Ödevi</title>
+    <style>
+      .malzeme-table1 {
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        border-top: 2px solid gray;
+        border-left: 2px solid gray;
+      }
+      .malzeme-table1 th, .malzeme-table1
+      td {
+        border: 1px solid black;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      .exampleNested-table2 {
+        border-collapse: collapse;
+      }
+      .exampleNested-table2 th, .exampleNested-table2
+      td {
+        border: 2px solid black;
+        padding: 5px;
+      }
+      .innerTable-table2 {
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        border-top: 2px solid gray;
+        border-left: 2px solid gray;
+      }
+      .innerTable-table2 th, .innerTable-table2
+      td {
+        border: 1px solid black;
+      }
+      .gunVeSeminer-table3 {
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        border-top: 2px solid gray;
+        border-left: 2px solid gray;
+      }
+      .gunVeSeminer-table3 td,
+      .gunVeSeminer-table3 th {
+        border-right: 2px solid gray;
+        border-bottom: 2px solid gray;
+        border-top: 2px solid black;
+        border-left: 2px solid black;
+      }
+      .lifeExpectancy-table4 {
+        border-collapse: collapse;
+      }
+      .lifeExpectancy-table4 th {
+        border: 1px solid black;
+        background-color: gainsboro;
+        text-align: left;
+        padding-left: 3px;
+        width: 75px;
+      }
+      .lifeExpectancy-table4 td {
+        border: 1px solid black;
+        padding-left: 3px;
+      }
+      .lifeExpectancy-table4 td:first-child {
+        border: none;
+      }
+      .multiLevel-table5 {
+        text-align: center;
+      }
+      .multiLevel-table5 th,
+      .multiLevel-table5 td {
+        border: 1px solid black;
+        padding: 3px;
+      }
+      .language-table6 {
+        border: 2px solid gray;
+      }
+      .language-table6 td,
+      .language-table6 th {
+        border: 2px solid gray;
+      }
+      .form-table7 {
+        border-collapse: collapse;
+      }
+      .form-table7 td,
+      .form-table7 th {
+        border: 2px solid black;
+        padding: 5px;
+      }
+      .office-table8 {
+        border-collapse: collapse;
+      }
+      .office-table8 td,
+      .office-table8 th {
+        border: 2px solid black;
+        padding: 0px;
+      }
+      
+      .masraflar-table9 tfoot {
+        background-color: aqua;
+      }
+      .time-table10 {
+        border: 5px solid gray;
+        border-collapse: collapse;
+      }
+      .time-table10 th,
+      .time-table10 td {
+        border: 2px solid black;
+        padding: 7px;
+        text-align: center;
+      }
+      .client-table11 {
+        border-collapse: collapse;
+        background-color: azure;
+      }
+
+      .client-table11 td {
+        border: 1px solid black;
+        height: 12px;
+        padding: 2px;
+      }
+      .client-table11 th {
+        border: 1px solid black;
+        height: 15px;
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: center;
+      }
+      .time-table12 {
+        border-collapse: collapse;
+      }
+      .time-table12 th,
+      .time-table12 td {
+        border: 2px solid black;
+      }
+      .community-table13 {
+        border-collapse: collapse;
+      }
+
+      .community-table13 th {
+        border: 2px solid black;
+        text-align: center;
+        padding: 7px;
+      }
+      .community-table13 td {
+        border: 2px solid black;
+        text-align: left;
+        padding-left: 7px;
+        padding-right: 10px;
+      }
+      .masraflar-table9 {
+        border-collapse: collapse;
+        border: 2px solid black;
+      }
+      .masraflar-table9 th{
+        padding-right: 18px;
+      }
+       .masraflar-table9 td {
+        padding-left: 15px;
+        padding-right: 25px;
+       }
+      .masraflar-table9 thead {
+        border-bottom: 2px solid black;
+      }
+      .subtotals-gray {
+        border-top: 2px dotted black;
+        background-color: gainsboro;
+        border-bottom: 2px solid black;
+      }
+      .right-border {
+        border-right: 2px solid black;
+      }
+      .left-border {
+        border-left: 2px dotted black;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="malzeme-table1">
+      <caption>
+        Tablo1.Malzeme Listesi
+      </caption>
+      <thead>
+        <tr>
+          <th>S.no</th>
+          <th>Description</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Soap</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Powder</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Perfume</td>
+          <td>90</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="2">Grand Total</th>
+          <th>180</th>
+        </tr>
+      </tfoot>
+    </table>
+    <br />
+    <hr />
+    <br />
+    <table class="exampleNested-table2">
+      <caption>
+        Tablo 2.Example : Nested
+      </caption>
+      <tbody>
+        <tr>
+          <th colspan="2" rowspan="3">CI</th>
+          <th rowspan="3">
+            All <br />
+            Genders
+          </th>
+          <th colspan="2">By Gender</th>
+        </tr>
+        <tr>
+          <td style="border: 2px solid black">
+            <table class="innerTable-table2">
+              <tr>
+                <th>Males</th>
+                <th>Females</th>
+              </tr>
+              <tr>
+                <td>9215604</td>
+                <td>4512358</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Rural</th>
+          <td style="border: 2px solid black">6521458</td>
+          <td style="border: 2px solid black">4215389</td>
+          <td colspan="2" style="border: 2px solid black; text-align: center">
+            4152348
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+    <br />
+    <hr />
+    <br />
+    <table class="gunVeSeminer-table3">
+      <caption>
+        Tablo 3.Gün ve Seminerler
+      </caption>
+      <tr>
+        <th rowspan="3">Day</th>
+        <th colspan="3">Seminar</th>
+      </tr>
+      <tr>
+        <th colspan="2">Schedule</th>
+        <th rowspan="2">Topic</th>
+      </tr>
+      <tr>
+        <th>Begin</th>
+        <th>End</th>
+      </tr>
+      <tr>
+        <td rowspan="2">Monday</td>
+        <td rowspan="2">8:00 a.m.</td>
+        <td rowspan="2">5:00 p.m.</td>
+        <td>Introduction to XML</td>
+      </tr>
+      <tr>
+        <td>Validity: DTD and Relax NG</td>
+      </tr>
+      <tr>
+        <td rowspan="4">Tuesday</td>
+        <td>8:00 a.m.</td>
+        <td>11:00 a.m.</td>
+        <td rowspan="2">XPath</td>
+      </tr>
+      <tr>
+        <td rowspan="2">11:00 a.m</td>
+        <td rowspan="2">2:00 p.m</td>
+      </tr>
+      <tr>
+        <td rowspan="2">XSL transformation</td>
+      </tr>
+      <tr>
+        <td>2:00 p.m</td>
+        <td>5:00 p.m</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>8:00 a.m</td>
+        <td>12:00 p.m</td>
+        <td>XLS Formatting Objects</td>
+      </tr>
+    </table>
+    <br />
+    <hr />
+    <br />
+    <table class="lifeExpectancy-table4">
+      <caption>
+        Tablo 4.Life Expectancy By Current Age
+      </caption>
+      <thead>
+        <tr>
+          <th colspan="2">65</th>
+          <th colspan="2">40</th>
+          <th colspan="2">20</th>
+        </tr>
+        <tr>
+          <th>Men</th>
+          <th>Women</th>
+          <th>Men</th>
+          <th>Women</th>
+          <th>Men</th>
+          <th>Women</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td>85</td>
+          <td>78</td>
+          <td>82</td>
+          <td>77</td>
+          <td>81</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <hr />
+    <br />
+    <table class="multiLevel-table5">
+      <caption>
+        Tablo 5.My Multi Level Table
+      </caption>
+      <thead>
+        <tr>
+          <td colspan="5" style="background-color: rgb(196, 195, 195)">
+            My Multi Level Table
+          </td>
+        </tr>
+        <tr>
+          <th colspan="2" rowspan="2">Cloumn 0</th>
+          <th rowspan="2">Column 1</th>
+          <th colspan="2">Column 2</th>
+        </tr>
+        <tr>
+          <th>Column 2a</th>
+          <th>Column 2b</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th rowspan="2">Row 1</th>
+          <th>Row 1a</th>
+          <td>123</td>
+          <td>456</td>
+          <td>789</td>
+        </tr>
+        <tr>
+          <th>Row 1b</th>
+          <td>123</td>
+          <td>456</td>
+          <td>789</td>
+        </tr>
+        <tr>
+          <th colspan="2">Row 2</th>
+          <td>123</td>
+          <td>456</td>
+          <td>789</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <hr />
+    <br />
+    <table class="language-table6">
+      <caption>
+        Tablo 6.Language and Frameworks
+      </caption>
+      <thead>
+        <tr>
+          <th colspan="2">Language and Frameworks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Python</td>
+          <td>Django</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Javascript</td>
+          <td>React.js</td>
+        </tr>
+        <tr>
+          <td>Vue.js</td>
+        </tr>
+        <tr>
+          <td>Ruby</td>
+          <td>Ruby on Rails</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <hr />
+    <br />
+    <table class="form-table7">
+      <caption>
+        Tablo 7.Form Tablosu
+      </caption>
+      <tr>
+        <th rowspan="11">TCB</th>
+        <th>Order no:</th>
+        <td colspan="3">#ABC001</td>
+      </tr>
+      <tr>
+        <th>Order Date:</th>
+        <td colspan="3">23-Mar-2016</td>
+      </tr>
+      <tr>
+        <th colspan="4">Customer</th>
+      </tr>
+      <tr>
+        <th>Name:</th>
+        <td colspan="3">John Papas</td>
+      </tr>
+      <tr>
+        <th>Address:</th>
+        <td colspan="3">Independence Day 5th str, 11511</td>
+      </tr>
+      <tr>
+        <th colspan="4">Order Details</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Of Mice and Men</td>
+        <td>Book</td>
+        <td>10.00€</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Les Miserable</td>
+        <td>Book</td>
+        <td>12.00€</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Game of Thrones - S01</td>
+        <td>DVD</td>
+        <td>50.00€</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Samsung Galaxy</td>
+        <td>Mobile Phone</td>
+        <td>200.00€</td>
+      </tr>
+      <tr>
+        <th colspan="3" style="text-align: end">Total:</th>
+        <td>272.00€</td>
+      </tr>
+    </table>
+    <br />
+    <hr />
+    <br />
+    <table class="office-table8">
+      <caption>
+        Tablo 8.Office Schedule
+      </caption>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>8:00am</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td rowspan="13">No Classes</td>
+        </tr>
+        <tr>
+          <th>9:00am</th>
+          <td rowspan="2">Office Hours</td>
+          <td></td>
+          <td rowspan="2">Office Hours</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>10:00am</th>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>11:00am</th>
+          <td rowspan="2">CS245A</td>
+          <td rowspan="2">CS301A</td>
+          <td rowspan="2">CS245A</td>
+          <td rowspan="2">CS301A</td>
+        </tr>
+        <tr>
+          <th>12:00pm</th>
+        </tr>
+        <tr>
+          <th>1:00pm</th>
+          <td colspan="4">Lunch</td>
+        </tr>
+        <tr>
+          <th>2:00pm</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>3:00pm</th>
+          <td>Office Hours</td>
+          <td>Office Hours</td>
+          <td></td>
+          <td>Office Hours</td>
+        </tr>
+        <tr>
+          <th>4:00pm</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>5:30pm</th>
+          <td rowspan="3">CS505A</td>
+          <td rowspan="3">CS556AH1</td>
+          <td rowspan="3">CS556BH2</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>6:30pm</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th>7:30pm</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th>8:00pm</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td colspan="5">CS556AH1 is a first term course</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td colspan="5">CS556BH2 is a second term course</td>
+        </tr>
+      </tfoot>
+    </table>
+    <br />
+    <hr />
+    <br />
+    <table class="masraflar-table9">
+      <caption>
+        Tablo 9.Travel Expense Report
+      </caption>
+      <thead>
+        <tr>
+          <th class="right-border"></th>
+          <th>Meals</th>
+          <th>Hotels</th>
+          <th>Transport</th>
+          <td class="left-border">subtotals</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+                <th class="right-border">San Jose</th>
+                <th colspan="3"></th>
+                <td class="left-border"></td>
+              <tr>
+                <td class="right-border">25-Aug-97</td>
+                <td>37.74</td>
+                <td>112.00</td>
+                <td>45.00</td>
+                <td class="left-border"></td>
+              </tr>
+              <tr>
+                <td class="right-border">26-Aug-97</td>
+                <td>27.28</td>
+                <td>112.00</td>
+                <td>45.00</td>
+                <td class="left-border"></td>
+              </tr>
+              <tr class="subtotals-gray">
+                <td class="right-border">subtotals</td>
+                <td>65.02</td>
+                <td>224.00</td>
+                <td>90.00</td>
+                <td class="left-border">379.03</td>
+              </tr>
+        </tr>
+        <tr>
+                <th class="right-border">Seattle</th>
+                <th colspan="3"></th>
+                <td class="left-border"></td>
+              </tr>
+              <tr>
+                <td class="right-border">27-Aug-97</td>
+                <td>96.25</td>
+                <td>109.00</td>
+                <td>36.00</td>
+                <td class="left-border"></td>
+              </tr>
+              <tr>
+                <td class="right-border">28-Aug-97</td>
+                <td>35.00</td>
+                <td>109.00</td>
+                <td>36.00</td>
+                <td class="left-border"></td>
+              </tr>
+              <tr class="subtotals-gray">
+                <td class="right-border">subtotals</td>
+                <td>131.25</td>
+                <td>218.00</td>
+                <td>72.00</td>
+                <td class="left-border">421.25</td>
+              </tr>
+      <tfoot>
+        <tr>
+          <th class="right-border">Totals</th>
+          <td>196.27</td>
+          <td>442.00</td>
+          <td>162.00</td>
+          <th class="left-border">800.27</th>
+        </tr>
+      </tfoot>
+    </table>
+    <br />
+    <hr />
+    <br />
+    <table class="time-table10">
+      <caption>
+        Tablo 10.Time Table
+      </caption>
+      <thead>
+        <tr>
+          <th><br />Day/Period</th>
+          <th>I<br />9:30-10:20</th>
+          <th>II<br />10:20-11:10</th>
+          <th>III<br />11:10-12:00</th>
+          <th>12:00-12:40</th>
+          <th>IV<br />12:40-1:30</th>
+          <th>V<br />1:30-2:20</th>
+          <th>VI<br />2:20-3:10</th>
+          <th>VII<br />3:10-4:00</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Monday</th>
+          <td>Eng</td>
+          <td>Mat</td>
+          <td>Che</td>
+          <th
+            rowspan="6"
+            style="writing-mode: vertical-rl; text-orientation: upright"
+          >
+            LUNCH
+          </th>
+          <td colspan="3">LAB</td>
+          <td>Phy</td>
+        </tr>
+        <tr>
+          <th>Tuesday</th>
+          <td colspan="3">LAB</td>
+          <td>Eng</td>
+          <td>Che</td>
+          <td>Mat</td>
+          <td>SPORTS</td>
+        </tr>
+        <tr>
+          <th>Wednesday</th>
+          <td>Mat</td>
+          <td>phy</td>
+          <td>Eng</td>
+          <td>Che</td>
+          <td colspan="3">LIBRARY</td>
+        </tr>
+        <tr>
+          <th>Thursday</th>
+          <td>Phy</td>
+          <td>Eng</td>
+          <td>Che</td>
+          <td colspan="3">LAB</td>
+          <td>Mat</td>
+        </tr>
+        <tr>
+          <th>Friday</th>
+          <td colspan="3">LAB</td>
+          <td>Mat</td>
+          <td>Che</td>
+          <td>Eng</td>
+          <td>Phy</td>
+        </tr>
+        <tr>
+          <th>Saturday</th>
+          <td>Eng</td>
+          <td>Che</td>
+          <td>Mat</td>
+          <td colspan="3">SEMINAR</td>
+          <td>SPORTS</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <hr />
+    <br />
+    <table class="client-table11">
+      <caption>
+        Tablo 11.Müşteri Skor
+      </caption>
+      <thead>
+        <tr>
+          <th>Client_Name</th>
+          <th style="text-align: start">John</th>
+          <th rowspan="2">id</th>
+          <td rowspan="2" style="text-align: center">849</td>
+        </tr>
+        <tr>
+          <th>Manager</th>
+          <th>Benny Daniel</th>
+        </tr>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+          <th>Group</th>
+          <th>Score</th>
+          <th>Result</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ultra</td>
+          <td style="text-align: end">90</td>
+          <td>Pass</td>
+          <td>Onsite</td>
+        </tr>
+        <tr>
+          <td>Mega</td>
+          <td style="text-align: end">30</td>
+          <td>Fail</td>
+          <td>Offshore</td>
+        </tr>
+        <tr>
+          <td>Snow</td>
+          <td style="text-align: end">70</td>
+          <td>Pass</td>
+          <td>Onsite</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <hr />
+    <br />
+    <table class="time-table12">
+      <caption>
+        Tablo 12.Time Table
+      </caption>
+      <thead>
+        <tr>
+          <th colspan="6">Time Table</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="6">Hours</td>
+          <th>mon</th>
+          <th>tues</th>
+          <th>Wed</th>
+          <th>Thrus</th>
+          <th>Fri</th>
+        </tr>
+        <tr>
+          <td>Science</td>
+          <td>Maths</td>
+          <td>Science</td>
+          <td>Maths</td>
+          <td>Arts</td>
+        </tr>
+        <tr>
+          <td>Science</td>
+          <td>Maths</td>
+          <td>Science</td>
+          <td>Maths</td>
+          <td>Arts</td>
+        </tr>
+        <tr>
+          <th colspan="5">Lunch</th>
+        </tr>
+        <tr>
+          <td>Science</td>
+          <td>Maths</td>
+          <td>Science</td>
+          <td>Maths</td>
+          <td rowspan="2">Project</td>
+        </tr>
+        <tr>
+          <td>Science</td>
+          <td>Maths</td>
+          <td>Science</td>
+          <td>Maths</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <hr />
+    <br />
+    <table class="community-table13">
+      <caption>
+        Tablo 13.Community Courses
+      </caption>
+      <thead>
+        <tr>
+          <th colspan="5">Community Courses -- Bath Autumn 1997</th>
+        </tr>
+        <tr>
+          <th>Course Name</th>
+          <th>Course Tutor</th>
+          <th>Summary</th>
+          <th>Code</th>
+          <th>Fee</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>After Civil War</td>
+          <td>
+            Dr. John <br />
+            Wroughton
+          </td>
+          <td>
+            The course will eximne the turbulent <br />
+            years in England after 1646.
+            <em
+              >6 weekly <br />
+              meetings starting Monday 13th October.</em
+            >
+          </td>
+          <td>H27</td>
+          <td>£32</td>
+        </tr>
+        <tr>
+          <td>
+            An Introduction to <br />
+            Anglo-Saxon England
+          </td>
+          <td>Mark Cottle</td>
+          <td>
+            One day course introducing the earky <br />
+            medieval period reconstruction the <br />
+            Anglo-Saxons and their sciety.
+            <em
+              >Saturday <br />
+              18th October.</em
+            >
+          </td>
+          <td>H28</td>
+          <td>£18</td>
+        </tr>
+        <tr>
+          <td>
+            The Glory that was <br />
+            Greece
+          </td>
+          <td>Valeria Lorenz</td>
+          <td>
+            Birthplace of democracy, philosophy, <br />
+            heartland of theater, home of argument. <br />
+            The Romans may have have done it but the <br />
+            Greeks did it first.
+            <em
+              >Saturday day school 25th <br />
+              October 1997</em
+            >
+          </td>
+          <td>H30</td>
+          <td>£18</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

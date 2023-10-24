@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kahve Boyutunu Seçin</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Kahve Boyutunu Seçin</h1>
+      <form>
+        <div class="coffee-types">
+          <div class="coffee-type">
+            <img src="images/boylar.jpg" alt="Boyutlar" height="350px" />
+            <h2>Boyutlar</h2>
+            <div
+              class="radio-buttons"
+              style="display: flex; flex-direction: row; margin-left: -150px"
+            >
+              <input
+                type="radio"
+                name="coffee-size"
+                value="buyuk"
+                id="buyuk"
+                style="margin-right: 5px"
+              />
+              <label for="buyuk">Büyük</label>
+              <input
+                type="radio"
+                name="coffee-size"
+                value="orta"
+                id="orta"
+                style="margin-right: 5px"
+              />
+              <label for="orta">Orta</label>
+              <input
+                type="radio"
+                name="coffee-size"
+                value="kucuk"
+                id="kucuk"
+                style="margin-right: 5px"
+              />
+              <label for="kucuk">Küçük</label>
+            </div>
+          </div>
+        </div>
+        <button formaction="checkout.html" type="submit">Seç</button>
+      </form>
+    </div>
+  </body>
+</html>

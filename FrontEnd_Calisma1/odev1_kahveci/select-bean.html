@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kahve Çekirdeğinizi Seçin</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Kahve Çekirdeğinizi Seçin</h1>
+      <form>
+        <div class="coffee-types">
+          <div class="coffee-type">
+            <img src="images/arabica.jpg" alt="Arabica" height="350px" />
+            <h2>Arabica</h2>
+            <p>
+              Arabica kahve çekirdekleri, dünyanın en yaygın <br />
+              kahve çekirdeği türüdür. Daha yüksek rakımlı bölgelerde<br />
+              yetişirler ve daha az asitli, daha tatlı ve daha aromatik <br />
+              bir tada sahiptirler.
+            </p>
+            <input type="radio" name="bean-type" value="arabica" id="arabica" />
+            <label for="arabica">Arabica</label>
+          </div>
+          <div class="coffee-type">
+            <img src="images/colombia.jpg" alt="Colombia" height="350px" />
+            <h2>Colombia</h2>
+            <p>
+              Colombia kahve çekirdekleri, dünyanın en kaliteli <br />
+              kahve çekirdeği türlerinden biridir. Orta derecede <br />
+              asitli, dengeli bir tada sahiptirler ve çikolata, <br />
+              karamel ve meyve aromaları içerirler.
+            </p>
+            <input
+              type="radio"
+              name="bean-type"
+              value="colombia"
+              id="colombia"
+            />
+            <label for="colombia">Colombia</label>
+          </div>
+          <div class="coffee-type">
+            <img src="images/ethiopia.jpg" alt="Ethiopia" height="350px" />
+            <h2>Ethiopia</h2>
+            <p>
+              Etiyopya kahve çekirdekleri, dünyanın en aromatik <br />
+              kahve çekirdeği türlerinden biridir. Yüksek asitli, <br />
+              meyvemsi bir tada sahiptirler ve çilek, ahududu ve <br />
+              mango aromaları içerirler.
+            </p>
+            <input
+              type="radio"
+              name="bean-type"
+              value="ethiopia"
+              id="ethiopia"
+            />
+            <label for="ethiopia">Ethiopia</label>
+          </div>
+        </div>
+        <button formaction="select-roast.html" type="submit">Seç</button>
+      </form>
+    </div>
+  </body>
+</html>

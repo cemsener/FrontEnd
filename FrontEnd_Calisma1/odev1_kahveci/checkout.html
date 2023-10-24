@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/form-style.css" />
+    <title>Abone Ol</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="images/dukkan.jpg" alt="Image" width="1500px" />
+      </header>
+      <fieldset style="width: 1000px">
+        <legend style="margin-left: 15px"><h2>Abone Ol</h2></legend>
+        <form class="form">
+          <table>
+            <tr>
+              <td><label for="fullName">İsim Soyisim</label></td>
+              <td><input type="text" id="fullName" name="fullName" /></td>
+            </tr>
+            <tr>
+              <td><label for="email">E-Posta</label></td>
+              <td><input type="text" id="email" name="email" /></td>
+            </tr>
+            <tr>
+              <td colspan="2" style="text-align: right">
+                <button formaction="success.html" type="submit">Gönder</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </fieldset>
+    </div>
+  </body>
+</html>
