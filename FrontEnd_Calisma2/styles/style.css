@@ -1,0 +1,82 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to left, #3d3d3d 0%, #252525 100%);
+}
+.hero {
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+.hero a {
+  color: #eee9db;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: 3px;
+}
+
+.hero header {
+  width: 1110px;
+  height: 42px;
+  margin-top: 30px;
+  margin-left: 165px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+.hero header nav {
+  width: 447px;
+  height: 21px;
+  margin-top: 11px;
+  margin-left: 483px;
+  display: flex;
+  justify-content: space-around;
+}
+.button-login {
+  width: 130px;
+  height: 42px;
+  color: #eee9db;
+  background-color: transparent;
+  border: 1px solid #eee9db;
+  border-radius: 10px;
+}
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-left {
+  margin-left: 165px;
+  margin-top: -50px;
+}
+.hero-right {
+  margin-left: 0;
+  margin-top: -50px;
+}
+.hero-text {
+  color: #eee9db;
+  width: 500px;
+  height: 290px;
+}
+.hero-text h1 {
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 87px;
+}
+.hero-text p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.hero-button {
+  width: 200px;
+  height: 60px;
+  background: #f2c034;
+  margin-top: 100px;
+  color: #282828;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+}
